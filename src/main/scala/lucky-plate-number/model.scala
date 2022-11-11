@@ -5,6 +5,7 @@ import scala.io.StdIn.readInt
 import scala.io.StdIn.readLine
 import scala.collection.immutable.SortedSet
 import scala.collection.immutable.SortedMap
+import scala.collection.immutable.ListSet
 
 case class PlateNumber(plateNumber: String)
 
@@ -177,15 +178,15 @@ object LuckyPlate {
     val selectedLuckyNumberOptions: Set[LuckyNumber] = selectedLuckyNumberOptionIds.map(id=> allEnhanceLuckyOptions(id.toInt))
     val searchPlateNumberResult = searchGoodPlateNumber(allPlateNumbers, selectedDay.getUnluckyNumber , selectedLuckyNumberOptions)
     // val grouping: Map[String, SortedSet[String]] = groupPlateNumberBySumResult(searchPlateNumberResult)
-    val grouping= groupPlateNumberBySumResult(searchPlateNumberResult)
-    val sumResultDescriptions = getAllPlateNumberSumResultDescription()
+    val grouping = groupPlateNumberBySumResult(searchPlateNumberResult)
+    
     println("\n==========================================")
-    println(s"\n\nผลลัพธ์ทั้งหมด ${grouping.map(sumResultGroup=>sumResultGroup._2.size).sum} รายการ")
-    println(grouping.map(g=> s"\n\n${sumResultDescriptions(g._1)} (${g._2.size}):\n${g._2.mkString("\n",", ","")}").mkString)
+    println(s"\n\nผลลัพธ์ทั้งหมด ${grouping.map(g=>g._2.size).sum} รายการ")
+    println(grouping.map(g=> s"\n\n${g._1} (${g._2.size}):\n${g._2.mkString("\n",", ","")}").mkString)
   }
 
-  def getAllPlateNumberSumResultDescription(): Map[String, String] = {
-    Map[String, String](
+  def getAllPlateNumberSumResultDescription(): ListMap[String, String] = {
+    ListMap[String, String](
       PlateNumberSumResultEqualsOne.getSumResult() -> PlateNumberSumResultEqualsOne.getDescripiton(),
       PlateNumberSumResultEqualsTwo.getSumResult() -> PlateNumberSumResultEqualsTwo.getDescripiton(),
       PlateNumberSumResultEqualsThree.getSumResult() -> PlateNumberSumResultEqualsThree.getDescripiton(),
@@ -198,8 +199,10 @@ object LuckyPlate {
       )
   }
 
-  def groupPlateNumberBySumResult(plateNumbers: Set[PlateNumber]): Map[String, SortedSet[String]] = {
-    plateNumbers.map(p=>p.plateNumber).to[SortedSet].groupBy(g=>sumNumbersUntilRemainOneDigit(g))
+  def groupPlateNumberBySumResult(plateNumbers: Set[PlateNumber]) = {
+    val sumResultMap: ListMap[String, String] = getAllPlateNumberSumResultDescription()
+    var plateNumbersGroupBySumResult = plateNumbers.map(p => p.plateNumber.toInt).groupBy(g => sumNumbersUntilRemainOneDigit(g.toString))
+    sumResultMap.map(resultNumber => (sumResultMap(resultNumber._1), plateNumbersGroupBySumResult(resultNumber._1).to[SortedSet]))
   }
   
   def getBirthdayWithUnluckyNumberOptions(): ListMap[Int, BirthdayWithUnluckyNumber] = {
