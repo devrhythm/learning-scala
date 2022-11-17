@@ -1,2 +1,13 @@
+/project/project/
+/project/target/
 *.class
 *.log
+*.tasty
+*.sc
+*.cache
+metals.mv.db
+metals.lock.db
+metals.sbt
+settings.json
+codeapp-build.json
+*.scalafmt.conf
