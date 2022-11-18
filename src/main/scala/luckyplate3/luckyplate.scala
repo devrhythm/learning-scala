@@ -50,48 +50,48 @@ case class SumPlateNumberWithLicensePlate(sumPlateNumber: SumPlateNumberFilter, 
 }
 
 case object SumPlateNumberEqualsOne extends SumPlateNumberFilter {
-  override def description: String = "ผลรวมเท่ากับ 1 เหมาะกับคนที่มียศมีตำแหน่ง ข้าราชการ ส่งผลให้เป็นผู้มีอำนาจวาสนา"
+  override def description: String = "เหมาะกับคนที่มียศมีตำแหน่ง ข้าราชการ ส่งผลให้เป็นผู้มีอำนาจวาสนา"
   override def number = "1"
 }
 
 case object SumPlateNumberEqualsTwo extends SumPlateNumberFilter {
-  override def description: String = "ผลรวมเท่ากับ 2 เหมาะกับผู้หญิง คนทำงานด้านบริการ การเงินการธนาคาร ค้าขาย ช่วยส่งเสริมด้านการเงิน"
+  override def description: String = "เหมาะกับผู้หญิง คนทำงานด้านบริการ การเงินการธนาคาร ค้าขาย ช่วยส่งเสริมด้านการเงิน"
   override def number = "2"
 }
 
 case object SumPlateNumberEqualsThree extends SumPlateNumberFilter {
-  override def description: String = "ผลรวมเท่ากับ 3 เหมาะกับผู้ชาย คนทำงานในเครื่องแบบ เช่น ทหาร ตำรวจ ช่างฝีมือ หมอ พยาบาล ส่งผลให้ขับรถใจร้อน"
+  override def description: String = "เหมาะกับผู้ชาย คนทำงานในเครื่องแบบ เช่น ทหาร ตำรวจ ช่างฝีมือ หมอ พยาบาล ส่งผลให้ขับรถใจร้อน"
   override def number = "3"
 }
 
 case object SumPlateNumberEqualsFour extends SumPlateNumberFilter {
-  override def description: String = "ผลรวมเท่ากับ 4 เหมาะกับคนที่ทำงานด้านการเจรจาติดต่อสื่อสาร เช่น ผู้สื่อข่าว พิธีกร ส่งผลให้มีชื่อเสียง ประสบความสำเร็จ"
+  override def description: String = "เหมาะกับคนที่ทำงานด้านการเจรจาติดต่อสื่อสาร เช่น ผู้สื่อข่าว พิธีกร ส่งผลให้มีชื่อเสียง ประสบความสำเร็จ"
   override def number = "4"
 }
 
 case object SumPlateNumberEqualsFive extends SumPlateNumberFilter {
   override def number = "5"
-  override def description: String = "ผลรวมเท่ากับ 5 เหมาะกับทุกคน และคนที่ทำงานด้านการศึกษา ศาลยุติธรรม หมอ พยาบาล ส่งผลให้มีความน่าเชื่อถือ"
+  override def description: String = "เหมาะกับทุกคน และคนที่ทำงานด้านการศึกษา ศาลยุติธรรม หมอ พยาบาล ส่งผลให้มีความน่าเชื่อถือ"
 }
 
 case object SumPlateNumberEqualsSix extends SumPlateNumberFilter {
   override def number = "6"
-  override def description: String = "ผลรวมเท่ากับ 6 เหมาะกับคนทำงานด้านบันเทิง เสริมสวย ขายของสวยงาม ส่งผลดีเรื่องแคล้วคลาด มีคนคอยช่วยเหลืออุปถัมภ์"
+  override def description: String = "เหมาะกับคนทำงานด้านบันเทิง เสริมสวย ขายของสวยงาม ส่งผลดีเรื่องแคล้วคลาด มีคนคอยช่วยเหลืออุปถัมภ์"
 }
 
 case object SumPlateNumberEqualsSeven extends SumPlateNumberFilter {
   override def number = "7"
-  override def description: String = "ผลรวมเท่ากับ 7 เหมาะกับคนทำอาชีพการเกษตร แต่ส่งผลเสียด้านการเงินและการเดินทางมีโอกาสเกิดอุบัติเหตุได้ง่ายๆ"
+  override def description: String = "เหมาะกับคนทำอาชีพการเกษตร แต่ส่งผลเสียด้านการเงินและการเดินทางมีโอกาสเกิดอุบัติเหตุได้ง่ายๆ"
 }
 
 case object SumPlateNumberEqualsEight extends SumPlateNumberFilter {
   override def number = "8"
-  override def description: String = "ผลรวมเท่ากับ 8 เหมาะกับคนทำงานกลางคืน อาชีพเสี่ยงอันตราย อาชีพสีเทา นักโหราศาสตร์ ส่งผลให้ร่ำรวย มั่งมี มีคนยกย่อง"
+  override def description: String = "เหมาะกับคนทำงานกลางคืน อาชีพเสี่ยงอันตราย อาชีพสีเทา นักโหราศาสตร์ ส่งผลให้ร่ำรวย มั่งมี มีคนยกย่อง"
 }
 
 case object SumPlateNumberEqualsNine extends SumPlateNumberFilter {
   override def number = "9"
-  override def description: String = "ผลรวมเท่ากับ 9 เหมาะกับทุกคน ส่งผลให้มีสิ่งศักดิ์สิทธิ์คุ้มครอง แคล้วคลาดปลอดภัย ปราศจากอุบัติเหตุต่างๆ"
+  override def description: String = "เหมาะกับทุกคน ส่งผลให้มีสิ่งศักดิ์สิทธิ์คุ้มครอง แคล้วคลาดปลอดภัย ปราศจากอุบัติเหตุต่างๆ"
 }
 
 case object EasyGetUpsetNumber extends UnluckyNumberFilter { 
@@ -280,7 +280,7 @@ object MenuOptions {
       "6" -> SumOfFirstPairAndLastPairEqualsNine,
       "7" -> ContainsLuckyNumberSeven,
       "8" -> ContainsLuckyNumbeEight,
-      "9" -> ContainsLuckyNumbeNine
+      "9" -> ContainsLuckyNumbeNine,
     )
   }
 
@@ -304,11 +304,10 @@ object PlateFilter {
       plates: TreeSet[LicensePlate],
       filters: Set[FilterLicensePlate],
   ): TreeSet[LicensePlate] = {
-    // plates.filter(plate => filters.forall(f => f.predicate(plate))) // filter item by all predicates each items
-
-    val allFilters: Set[TreeSet[LicensePlate] => TreeSet[LicensePlate]] = filters.map(f=> f.filter _)
-    val composedFilters: TreeSet[LicensePlate] => TreeSet[LicensePlate] = composedFilters(allFilters.head, allFilters.tail)
-    composedFilters(plates) // filter items by each filter function
+    // plates.filter(plate => filters.forall(f => f.predicate(plate))) 
+    val allFilters: Set[TreeSet[LicensePlate] => TreeSet[LicensePlate]] = (filters ++ getUnluckyNumberFilters()).map(f=> f.filter _)
+    val combinedFilters: TreeSet[LicensePlate] => TreeSet[LicensePlate] = composedFilters(allFilters.head, allFilters.tail)
+    combinedFilters(plates) 
   }
 
   def composedFilters(composedFilter: TreeSet[LicensePlate] => TreeSet[LicensePlate], filters: Set[TreeSet[LicensePlate] => TreeSet[LicensePlate]]): TreeSet[LicensePlate] => TreeSet[LicensePlate] = {
@@ -321,18 +320,15 @@ object PlateFilter {
     }
   }
 
-  def filterOutUnluckyNumbers(plates: TreeSet[LicensePlate], carOwnerBirthDayOfWeek: CarOwnerBirthDayOfWeekWithUnluckyNumberFilter): TreeSet[LicensePlate] = {
-    filter(plates, Set(
-        carOwnerBirthDayOfWeek,
-        EasyGetUpsetNumber,
+  def getUnluckyNumberFilters(): Set[FilterLicensePlate] = {
+    Set(EasyGetUpsetNumber,
         EasyGetAccidentNumber, 
         OftenGetPaidRepairmentNumber, 
         GetElectricProblemNumber, 
         GetScratchWhenParkingNumber, 
         UnluckyAndGetAccidentNumber,
         NumberLengthEqualsFourAndStartAndEndWithOne,
-        UnluckyNumberSumEqualsThirteen,
-      ))
+        UnluckyNumberSumEqualsThirteen)
   }
 }
 
@@ -355,19 +351,20 @@ object LicensePlateGenerator {
 
 object LuckyPlateLicense {
   def main(args: Array[String]): Unit = {
-    val selectedBirthDaysOption: CarOwnerBirthDayOfWeekWithUnluckyNumberFilter = askForBirthDayOfWeek()
-    val allLicensePlates: TreeSet[LicensePlate] = LicensePlateGenerator.generateLicensePlates()
-    val luckyLicensePlates: TreeSet[LicensePlate] = PlateFilter.filterOutUnluckyNumbers(allLicensePlates, selectedBirthDaysOption)
-    
+    val selectedBirthDayOfWeekFilter: Set[CarOwnerBirthDayOfWeekWithUnluckyNumberFilter] = Set(askForBirthDayOfWeek())
+    val selectedOccupationFilters: Set[SumPlateNumberFilter] = askForOccupations()
     val selectedBlessingFilters: Set[FilterLicensePlate] = askForBlessing()
-    val plateWithBlessings: TreeSet[LicensePlate] = PlateFilter.filter(luckyLicensePlates, selectedBlessingFilters)
-    val groupedPlates: Iterable[SumPlateNumberWithLicensePlate] = groupPlateNumberBySum(luckyLicensePlates)
-    println(s"ผลลัพธ์ทั้งหมด: ${groupedPlates.map(plate => plate.licensePlates.size).sum} รายการ")
-    println(groupedPlates.map(plate => s"\n${plate.sumPlateNumber.description} (${plate.licensePlates.size}) :\n\n${plate.licensePlates.map(p=>p.number.toInt).mkString(", ")}\n\n").mkString("\n"))
+    val allSelectedFilter: Set[FilterLicensePlate] = (selectedBirthDayOfWeekFilter ++ selectedOccupationFilters ++ selectedBlessingFilters)
+    val allLicensePlates: TreeSet[LicensePlate] = LicensePlateGenerator.generateLicensePlates()
+    val luckyLicensePlates: TreeSet[LicensePlate] = PlateFilter.filter(allLicensePlates, allSelectedFilter)
+    println(s"${luckyLicensePlates.map(l => l.number).mkString(", ")}")
+    // val groupedPlates: Iterable[SumPlateNumberWithLicensePlate] = groupPlateNumberBySum(luckyLicensePlates)
+    // println(s"ผลลัพธ์ทั้งหมด: ${groupedPlates.map(plate => plate.licensePlates.size).sum} รายการ")
+    // println(groupedPlates.map(plate => s"\n${plate.sumPlateNumber.description} (${plate.licensePlates.size}) :\n\n${plate.licensePlates.map(p => p.number.toInt).mkString(", ")}\n\n").mkString("\n"))
   }
 
   def groupPlateNumberBySum(plates: TreeSet[LicensePlate])  = {
-    val groupedPlates: Map[String, TreeSet[LicensePlate]] = plates.groupBy(p=> PlateNumberCalculator.sumUntilOneDigit(p.number))
+    val groupedPlates: Map[String, TreeSet[LicensePlate]] = plates.groupBy(p => PlateNumberCalculator.sumUntilOneDigit(p.number))
     val sumPlateNumbers: ListMap[String, SumPlateNumberFilter] = MenuOptions.getPlateNumberSumOptions()
     sumPlateNumbers.map(sumResult => SumPlateNumberWithLicensePlate(sumPlateNumbers(sumResult._1), groupedPlates(sumResult._1)))
   }
@@ -375,19 +372,28 @@ object LuckyPlateLicense {
   def askForBirthDayOfWeek(): CarOwnerBirthDayOfWeekWithUnluckyNumberFilter = {
     val birthDayOfWeekOptions = MenuOptions.getDayWithUnluckyNumbers()
     println("กรุณาเลือกวันเกิดโดยการใส่ตัวเลข")
-    println(birthDayOfWeekOptions.map(m=> s"\n${m._1}) ${m._2.dayOfWeek}").mkString)
-    val optionNumbers: Array[String] = birthDayOfWeekOptions.map(m=>m._1).toArray
+    println(birthDayOfWeekOptions.map(m => s"\n${m._1}) ${m._2.dayOfWeek}").mkString)
+    val optionNumbers: Array[String] = birthDayOfWeekOptions.map(m => m._1).toArray
     val selectedBirthDayOfWeek: String = getSingleValueFromInput(optionNumbers, "กรุณาเลือกวันเกิดโดยการใส่ตัวเลข")
     birthDayOfWeekOptions(selectedBirthDayOfWeek)    
   }
 
   def askForBlessing(): Set[FilterLicensePlate] = {
     val blessingOptions = MenuOptions.getBlessingOptions()
-    println("กรุณาเลือกพรที่ต้องการ (เลือกตัวเลขได้มากกว่า 1 ข้อ ใช้ , ในการคั่นตัวเลือก)")
-    println(blessingOptions.map(o=> s"\n${o._1}) ${o._2.description}").mkString)
-    val optionNumbers: Array[String] = blessingOptions.map(m=>m._1).toArray
-    val selectedBlessings: Array[String] = getMultipleValuesFromInput(optionNumbers, "กรุณาเลือกพรที่ต้องการโดยการใส่ตัวเลข")
-    selectedBlessings.map(b=> blessingOptions(b)).toSet
+    println("อยากเสริมความมงคลด้านไหน (เลือกตัวเลขได้มากกว่า 1 ข้อ ใช้ , ในการคั่นตัวเลือก)")
+    println(blessingOptions.map(o => s"\n${o._1}) ${o._2.description}").mkString)
+    val optionNumbers: Array[String] = blessingOptions.map(m => m._1).toArray
+    val selectedBlessings: Array[String] = getMultipleValuesFromInput(optionNumbers, "กรุณาใส่ตัวเลข")
+    selectedBlessings.map(b => blessingOptions(b)).toSet
+  }
+
+  def askForOccupations(): Set[SumPlateNumberFilter] = {
+    val occupationOptions = MenuOptions.getPlateNumberSumOptions()
+    println("อยากได้เลขที่เหมาะกับอาชีพอะไร ส่งเสริมด้านไหน (เลือกตัวเลขได้มากกว่า 1 ข้อ ใช้ , ในการคั่นตัวเลือก)")
+    println(occupationOptions.map(o => s"\n${o._1}) ${o._2.description}").mkString)
+    val optionNumbers: Array[String] = occupationOptions.map(m => m._1).toArray
+    val selectedOccupations: Array[String] = getMultipleValuesFromInput(optionNumbers, "กรุณาใส่ตัวเลข")
+    selectedOccupations.map(o => occupationOptions(o)).toSet
   }
 
   def getSingleValueFromInput(allowValues: Array[String], errorMessage: String): String = {
